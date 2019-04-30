@@ -41,21 +41,6 @@ public class Cuadrado extends Rectangulo implements Comparable<Cuadrado> {
     // this.alto = lado;
   }
 
-  /**
-   * metodo ToString
-   */
-  @Override
-  public String toString() {
-    String figura = "";
-    for (int i = 0; i < getLado(); i++) {
-      for (int j = 0; j < getLado(); j++) {
-        figura += "*";
-      }
-      figura += "\n";
-    }
-
-    return figura;
-  }
 
   @Override
   public int hashCode() {

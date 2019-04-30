@@ -23,46 +23,36 @@ class Cuadrado(Rectangulo):
     '''constructor'''
     def __init__(self,lado):
         super().__init__(lado, lado)
-        self.__lado = lado
+        #self.__lado = lado
     
     @property
     def lado(self):
-        return self.__lado
+        #return self.__lado
+        return self.ancho
     
     @lado.setter
     def lado(self, lado):
-        self.__lado = lado
+        self.alto = lado
+        self.ancho = lado
         
-    '''
-    metodo toString
-    '''
-    def __str__(self):
-        figura="";
-        for i in range(self.__lado):
-            for j in range(self.__lado):
-                figura+="*";
-            figura+="\n";
-        return figura; 
     '''
     sobrecarga de operadores
     '''
     def __gt__(self, Cuadrado):
-        return self.__lado > Cuadrado.__lado
+        return self.ancho > Cuadrado.ancho
 
     def __lt__(self, Cuadrado):
-        return self.__lado < Cuadrado.__lado
+        return self.ancho < Cuadrado.ancho
 
     def __ge__(self, Cuadrado):
-        return self.__lado >= Cuadrado.__lado
+        return self.ancho >= Cuadrado.ancho
 
     def __le__(self, Cuadrado):
-        return self.__lado <= Cuadrado.__lado
+        return self.ancho <= Cuadrado.ancho
 
     def __eq__(self, Cuadrado):
-        return self.__lado == Cuadrado.__lado
+        return self.ancho == Cuadrado.ancho
 
-    def __ne__(self, Cuadrado):
-        return self.__lado != Cuadrado.__lado 
  
 
       
