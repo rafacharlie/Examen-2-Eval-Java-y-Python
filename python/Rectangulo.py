@@ -23,8 +23,6 @@ class Rectangulo:
     '''constructor'''
 
     def __init__(self, ancho, alto):
-        Rectangulo.__verifica_lado(ancho)
-        Rectangulo.__verifica_lado(alto)
         self.ancho = ancho
         self.alto = alto
     
