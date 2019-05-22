@@ -37,3 +37,4 @@ except:
 print(cuadrado1==cuadrado2)
 print(cuadrado1>cuadrado2)
 print(cuadrado1<cuadrado2)
+print(cuadrado1<=cuadrado2)

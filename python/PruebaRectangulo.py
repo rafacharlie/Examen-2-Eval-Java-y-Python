@@ -24,7 +24,7 @@ instancia2
 '''
 
 try:
-    rectangulo2 = Rectangulo(10,11)
+    rectangulo2 = Rectangulo(9,5)
     print(rectangulo2)
 
 except ArithmeticError:

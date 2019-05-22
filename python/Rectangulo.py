@@ -25,10 +25,8 @@ class Rectangulo:
     def __init__(self, ancho, alto):
         Rectangulo.__verifica_lado(ancho)
         Rectangulo.__verifica_lado(alto)
-        self.__ancho = ancho
-        self.__alto = alto
-        # self.setAncho(ancho)
-        # self.setAlto(lado)
+        self.ancho = ancho
+        self.alto = alto
     
     '''setter y getter a lo python'''
 
